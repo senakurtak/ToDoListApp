@@ -15,6 +15,10 @@
 		B3C9600D296B992F0019202A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C9600B296B992F0019202A /* LaunchScreen.storyboard */; };
 		B3C96016296B99BA0019202A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B3C96015296B99BA0019202A /* Realm */; };
 		B3C96018296B99BA0019202A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3C96017296B99BA0019202A /* RealmSwift */; };
+		B3C9601D296B9D8D0019202A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9601C296B9D8D0019202A /* Task.swift */; };
+		B3C9601F296B9FA60019202A /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9601E296B9FA60019202A /* AddTaskViewController.swift */; };
+		B3C96023296BA2A50019202A /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C96022296BA2A50019202A /* TodoViewModel.swift */; };
+		B3C96025296BA7D10019202A /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C96024296BA7D10019202A /* EditTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B3C96009296B992F0019202A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C9600C296B992F0019202A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C9600E296B992F0019202A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C9601C296B9D8D0019202A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B3C9601E296B9FA60019202A /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		B3C96022296BA2A50019202A /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		B3C96024296BA7D10019202A /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +68,43 @@
 		B3C95FFF296B992C0019202A /* ToDoListApp */ = {
 			isa = PBXGroup;
 			children = (
+				B3C9601B296B9A720019202A /* View */,
+				B3C9601A296B9A6B0019202A /* ViewModel */,
+				B3C96019296B9A650019202A /* Model */,
 				B3C96000296B992C0019202A /* AppDelegate.swift */,
 				B3C96002296B992C0019202A /* SceneDelegate.swift */,
-				B3C96004296B992C0019202A /* ViewController.swift */,
 				B3C96006296B992C0019202A /* Main.storyboard */,
 				B3C96009296B992F0019202A /* Assets.xcassets */,
 				B3C9600B296B992F0019202A /* LaunchScreen.storyboard */,
 				B3C9600E296B992F0019202A /* Info.plist */,
 			);
 			path = ToDoListApp;
+			sourceTree = "<group>";
+		};
+		B3C96019296B9A650019202A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9601C296B9D8D0019202A /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3C9601A296B9A6B0019202A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C96022296BA2A50019202A /* TodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3C9601B296B9A720019202A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3C96004296B992C0019202A /* ViewController.swift */,
+				B3C9601E296B9FA60019202A /* AddTaskViewController.swift */,
+				B3C96024296BA7D10019202A /* EditTaskViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C9601D296B9D8D0019202A /* Task.swift in Sources */,
 				B3C96005296B992C0019202A /* ViewController.swift in Sources */,
 				B3C96001296B992C0019202A /* AppDelegate.swift in Sources */,
 				B3C96003296B992C0019202A /* SceneDelegate.swift in Sources */,
+				B3C96023296BA2A50019202A /* TodoViewModel.swift in Sources */,
+				B3C96025296BA7D10019202A /* EditTaskViewController.swift in Sources */,
+				B3C9601F296B9FA60019202A /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
